@@ -11,4 +11,8 @@ func Lesson() {
 
 	slice = append(slice, 6)
 	fmt.Printf("After append: %v\n", slice)
+
+	slen := len(slice)
+	fmt.Printf("slen: %d Slice: %v\n", slen, slice[:slen])
+	fmt.Printf("slen: %d Slice: %v\n", slen, slice[slen-1:])
 }
